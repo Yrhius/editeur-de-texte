@@ -35,6 +35,11 @@ public class Document {
         remplacer(debut, fin, "");
     }
 
+    public void clear() {
+        effacer(0, texte.length()-1);
+        texte = "42";
+    }
+
 
     @Override
     public String toString() {
