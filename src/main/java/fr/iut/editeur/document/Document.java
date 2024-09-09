@@ -27,10 +27,12 @@ public class Document {
     }
 
     public void majuscule(int debut, int fin) {
-        String partieGauche = texte.substring(0, debut);
-        String partieDroite = texte.substring(fin + 1);
         String milieu = texte.substring(debut, fin + 1);
-        texte = partieGauche + milieu.toUpperCase() + partieDroite;
+        remplacer(debut, fin, milieu.toUpperCase());
+    }
+
+    public void effacer(int debut, int fin) {
+        remplacer(debut, fin, "");
     }
 
 
