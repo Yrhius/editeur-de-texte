@@ -19,4 +19,8 @@ public class CommandeAjouter extends CommandeDocument {
         this.document.ajouter(texte);
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "Cette fonction permet d'ajouter du texte";
+    }
 }
