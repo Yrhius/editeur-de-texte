@@ -16,7 +16,6 @@ public class CommandeMinuscule extends CommandeDocument{
         }else {
             this.document.minuscule(Integer.parseInt(parameters[1]), Integer.parseInt(parameters[2]));
         }
-        super.executer();
     }
 
     @Override
