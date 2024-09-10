@@ -42,6 +42,10 @@ public class Document {
     public void inserer(int debut, String texte) {
         remplacer(debut + 1, debut, texte);
     }
+    public void minuscule(int debut, int fin){
+        String milieu = texte.substring(debut, fin + 1);
+        remplacer(debut, fin, milieu.toLowerCase());
+    }
 
     @Override
     public String toString() {
