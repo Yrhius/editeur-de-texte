@@ -39,6 +39,9 @@ public class Document {
         effacer(0, texte.length()-1);
     }
 
+    public void inserer(int debut, String texte) {
+        remplacer(debut + 1, debut, texte);
+    }
 
     @Override
     public String toString() {
