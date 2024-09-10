@@ -21,7 +21,6 @@ public class CommandeMinuscule extends CommandeDocument{
 
     @Override
     public String getDescriptionCommande() {
-        return "Cette fonction permet mettre en minuscule une partie du texte";
+        return "Cette fonction permet de passer en minuscule une partie du texte";
     }
-
 }
