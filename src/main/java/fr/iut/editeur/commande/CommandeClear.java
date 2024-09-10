@@ -8,15 +8,12 @@ public class CommandeClear extends CommandeDocument{
         super(document, parameters);
     }
 
-
     @Override
-    public void executer() {
+    public void commandeExecuter() {
         if(parameters.length > 1) {
             System.err.println("Format attendu : effacer;debut;fin");
-            return;
         }else {
             this.document.clear();
         }
-        super.executer();
     }
 }
