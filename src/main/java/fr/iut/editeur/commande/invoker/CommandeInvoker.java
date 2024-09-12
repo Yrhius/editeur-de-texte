@@ -8,6 +8,10 @@ public class CommandeInvoker {
 
     private static CommandeInvoker instance;
 
+    /**
+     *
+     * @return
+     */
     public static synchronized CommandeInvoker getInstance() {
         if(instance == null) {
             instance = new CommandeInvoker();
@@ -17,6 +21,10 @@ public class CommandeInvoker {
 
     private CommandeInvoker() {}
 
+    /**
+     *
+     * @param commande
+     */
     public void executer(Commande commande) {
         commande.executer();
     }
