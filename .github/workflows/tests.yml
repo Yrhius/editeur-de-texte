@@ -1,0 +1,23 @@
+#Se déclenche quand on push sur n'importe quelle branche
+name : nom_custom_workflow
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  deplacer:
+    runs-on: ubuntu-latest
+    steps:
+        #On se place dans le dépôt...
+        - name: Checkout
+          uses: actions/checkout@v4
+        #Suite des actions...
+        - name: mise a jour
+          uses: actions/setup-java@v4
+          with :
+            java-version : 17
+            distribution: 'oracle'
+        - name: execution des tests
+          run : mvn clean test -Dtest=tests*Test
