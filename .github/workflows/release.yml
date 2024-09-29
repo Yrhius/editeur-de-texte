@@ -28,4 +28,4 @@ jobs:
       - name: creation d'une release
         uses: softprops/action-gh-release@v2
         with:
-          files: target/${{ github.ref_name }}
+          files: ${{ github.ref_name }}
