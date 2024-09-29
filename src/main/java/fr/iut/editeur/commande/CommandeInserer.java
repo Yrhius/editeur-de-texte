@@ -18,4 +18,9 @@ public class CommandeInserer extends CommandeDocument {
         }
         this.document.inserer(Integer.parseInt(parameters[1]),parameters[2]);
     }
+
+    public String getDescriptionCommande() {
+        return "Cette fonction permet d'inserer une partie du texte";
+    }
+
 }

@@ -16,4 +16,9 @@ public class CommandeClear extends CommandeDocument{
             this.document.clear();
         }
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Cette fonction permet d'effacer l'entièreté du texte";
+    }
 }
