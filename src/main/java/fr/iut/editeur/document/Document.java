@@ -5,7 +5,7 @@ public class Document {
     private String texte;
 
     public Document() {
-        this.texte = "";
+        this.texte = "a";
     }
 	
     public String getTexte() {
