@@ -7,7 +7,7 @@ on:
       - '*'
 
 jobs:
-  deplacer:
+  verification test:
     runs-on: ubuntu-latest
     steps:
         #On se place dans le dépôt...

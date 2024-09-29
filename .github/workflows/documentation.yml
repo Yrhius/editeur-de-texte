@@ -1,4 +1,4 @@
-#Se déclenche quand on push sur n'importe quelle branche
+#Se déclenche quand on push sur la branche master
 name : documentation_workflow
 
 on:
@@ -7,7 +7,7 @@ on:
       - 'master'
 
 jobs:
-  deplacer:
+  documentation:
     runs-on: ubuntu-latest
     steps:
       #On se place dans le dépôt...
