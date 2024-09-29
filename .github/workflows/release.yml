@@ -21,9 +21,11 @@ jobs:
         with :
           java-version : 17
           distribution: 'oracle'
+      - name: changement de version
+        run: mvn versions:set -DnewVersion=${{ github.ref_name }} -DgenerateBackupPoms=false
       - name: creation de l'executable
         run: mvn package
       - name: creation d'une release
         uses: softprops/action-gh-release@v2
         with:
-          files: target/EditeurDeTexte-0.0.1.jar
+          files: target/${{ github.ref_name }}
