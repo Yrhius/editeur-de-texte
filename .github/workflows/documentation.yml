@@ -24,6 +24,6 @@ jobs:
       - name: publié le contenu sur la branche gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-        param1: ${{ secrets.GITHUB_TOKEN }}
-        param2 : ./target/reports/apidocs/
+          github_token:  ${{ secrets.GITHUB_TOKEN }}
+          publish_dir :  ./target/reports/apidocs/
 
