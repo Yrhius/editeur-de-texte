@@ -25,4 +25,5 @@ jobs:
         run: mvn package
       - name: creation d'une release
         uses: softprops/action-gh-release@v2
-        files: target/EditeurDeTexte-0.0.1.jar
+        with:
+          files: target/EditeurDeTexte-0.0.1.jar
